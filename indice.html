@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Banca en Línea</title>
+    <link href="/style.css" rel="StyleSheet">
+</head>
+<body>
+    <div class= "general">
+    <div class="container_login">
+    <form action="">
+        <h1 class="lg" >Login</h1>
+
+
+        <label class="u_label" for="">Usuario :</label>
+        <input class="usuario" type="text" name="u" id="">
+
+        <label class="u_label" for="">Password :</label>
+        <input class="clave" type="text" name="c" id="">
+        <input class="boton_lg" type="button" value="Iniciar Sesión" onclick="login(this.form)">
+    
+    </form>
+
+    <script>
+        function login(form){
+            if(form.u.value=="ketta") {
+                if(form.c.value=="123") {
+                    location= "principal.html";
+                } else {
+                    alert("error de password");
+                }
+            } else {
+                alert("error de usuario");
+            }
+        }
+    </script>
+    </div>
+</div>
+</body>
+</html>
